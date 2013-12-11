@@ -13,6 +13,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    /// Parse App Id & ClientKey
+    [Parse setApplicationId:@"L0kHyxqLLi6y07nBlkDTU4aVsQjjWkYQsNOhGkMp"
+                  clientKey:@"NWOkA1NQKPS56Bk2zJgjYZUyfWIioUHCXZUur3ek"];
+    
+    /// Twitter Login - Twitter ConsumerKey & ConsumerSecret
+    [PFTwitterUtils initializeWithConsumerKey:@"XsWKZsZ57SNGM2dA7AyJw"
+                               consumerSecret:@"tpUai0RAOnvimhIruNj1uFO3VdQgijDg2o3H7eV4"];
+    
     return YES;
 }
 							
